@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+
+    <style>
+        /*Regras iniciadas com # se aplicam ao elemento com ID de mesmo nome*/
+        #logo{
+            width: 100%;/*A imagem ocupara 100% da largura disponivel*/
+            max-width: 360px;/*Largura maxima em pixels*/
+            
+
+        }
+        figcaption{
+            font-family: "Calibri", "Arial", sans-serif;
+            font-style: italic;
+            
+        }
+        figure{
+            text-align: center;
+        }
+        #logo_educacao{
+            width: 100%;
+            max-width: 360px;
+        }
+        body{
+            /*imagem de fundo da pagina
+            por padrão a imagem se repete por todo o fundo para cobrir a pagina toda*/
+            background-image:url(img/metal.jpg) ;
+            /*/*
+            para não repetir
+            background-repeat: no-repeat; 
+            */
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+        atributos da tag <img> (imagem)
+        SRC (source) -> o caminho para o arquivo da imagem a ser exibido
+        alt (texto alternativo) -> um texto que sera escrito no lugar da imagem caso o arquivo da imagem não seja encontrado
+        title (titulo para qualquer elemento) -> adiciona um balaozinho com o titulo ao passar o mouse em cima da imagem 
+    -->
+    <img id="logo" src="img/apptiva-logo.png" alt="Logotivo da empresa Apptiva">
+    <!--
+        <figure> para quando as imagens precisam, de legenda
+
+    -->
+    <figure>
+        <img id="logo_educacao"src="img/distance-education-1000px.jpg" alt="Educação a Distância" title="Venha Estudar conosco" >
+        <!--Legenda da Imagem-->
+        <figcaption>A Apptiva oferece as melhores opções para estudo a distancia.Faça coom nosso aluna</figcaption>
+    </figure>
+    <img style="width: 50px; border: 1px solid blue;" src="img/svg-logo.svg" alt="Imagem em SVG">
+</body>
+</html>
