@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links (hyperlinks ou hiperligações)</title>
+    <link rel="stylesheet" href="08.css">
 </head>
 <body>
     <!--
@@ -46,10 +47,42 @@
         Links são acessados em HTML pela tag <a> (anchor, âncora). O parametro href indica o destino do link
         Sempre que o destino Linkado NÂO pertencer ao nosso próprio site, o URL 
         precisa iniciar com o protocolo (http:// ou https://).
+        o elemento <a> é um elemento de linha tendo espaço ao adicionar elementos eles ficam na mesma linha
         
 
     -->
+    <div><!--<div é um elemento de bloco-->
+        <a href="https://www.google.com/">Site do google</a>
+    </div>
+    
 
-    <a href="https://www.google.com/">Site do google</a>
+    <!--<p> é um elemento de bloco--><p>Para maiores informações sobre HTML consulte <a href="07-imagens2.html">07-Imagens2</a></p>
+    <!--Link externo que abre em uma nova janela
+    para isso Utilizar o atributo target="_blank" 
+    Existe também o atributo target="_self"-->
+    <div><a href="https://www.cps.sp.gov.br" target="_blank">Site do Centro Paula Souza<a></div>
+
+        <!--Link de Imagen
+        Com o atributo title você consegue fazer aparecer um balão como etiqueta explicativo
+        -->
+        <div>
+            <a href="textos-02.html" title="Pagina de textos"><img src="../img/apptiva-icon.png"></a>
+        </div>
+
+        <div>
+            <a href="https://www.google.com.br" rel="nofollow">Link não recomendado</a><!--Atributo rel -> estabelece a relação da pagina inicial e da pagina linkada 
+            valores possiveis:
+            nofollow-- o autor da pagina não endossa necessariamente o link de destino
+            prev -- pagina anterior do mesmo site
+            next -- link para proxima pagina do mesmo site
+            external-- link para site externo
+            author-- link para o site pessoal do autor da pagina
+            
+            -->
+        </div>
+
+        <div>
+            <a href="http://www.pudim.com.br" rel="external">Site do Pudim</a>
+        </div>
 </body>
 </html>

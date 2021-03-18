@@ -1,0 +1,15 @@
+a{
+    color: green;
+    text-decoration: none;/*Remove o sublinhado do link*/
+}
+
+a:visited{
+    /*color: blue;*/
+    filter: brightness(80%);
+}
+/*Para mudar a cor do link enquanto o mouse esta em cima do mouse*/
+a:hover{
+   /* color: blue;*/
+   filter: brightness(-150%);
+    text-decoration: underline;/*Volta o sublinhado quando o mouse esta sobre o link*/
+}
