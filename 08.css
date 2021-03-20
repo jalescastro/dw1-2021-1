@@ -5,7 +5,7 @@ a{
 
 a:visited{
     /*color: blue;*/
-    filter: brightness(80%);
+    color:red ;
 }
 /*Para mudar a cor do link enquanto o mouse esta em cima do mouse*/
 a:hover{
